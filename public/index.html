@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Compi1adores 1</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">  -->
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/toastr/build/toastr.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/menuresponsive.js"></script>
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <header class="container">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">MENU TRADUCTOR</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="active"><a href="#" onclick="nuevaTabs()">Nuevo</a></li>
+            <li><a onclick="document.getElementById('archivos').click();"><input id="archivos" type="file" style="display:none;">ABRIR</a></li>
+            <li class="dropdown">
+              <a href="https://www.henry-chavez.com" class="dropdown-toggle">down <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.henry-chavez.com">Action</a></li>
+                <li><a href="https://www.henry-chavez.com">Another action</a></li>
+                <li><a href="https://www.henry-chavez.com">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="https://www.henry-chavez.com">Separated link</a></li>
+                <li class="dropdown">
+                  <a href="https://www.henry-chavez.com" class="dropdown-toggle">Dropdown <b
+                      class="caret right"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://www.henry-chavez.com">Action</a></li>
+                    <li><a href="https://www.henry-chavez.com">Another action</a></li>
+                    <li><a href="https://www.henry-chavez.com">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://www.henry-chavez.com">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.henry-chavez.com">Link</a></li>
+            <li class="dropdown">
+              <a href="https://www.henry-chavez.com" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.henry-chavez.com">Action</a></li>
+                <li><a href="https://www.henry-chavez.com">Another action</a></li>
+                <li><a href="https://www.henry-chavez.com">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="https://www.henry-chavez.com">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--==========================
+      Contact Section
+    ============================-->
+  <section id="contact" class="section-bg wow fadeInUp">
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            <div  class="form-group">
+              <ul id="tabuladores" class="tabs">
+              </ul>
+              <div id="areas" class="secciones">
+              </div>
+            </div>
+            <div id="botones" class="text-center" margin-bottom: 20px><button type="submit" onclick="enviarAlanalisis()"
+                id="boton prueba">Analizar</button>
+            </div>
+          </td>
+          <td>
+            <p>ENTRADA HTML</p>
+            <div id="Area4"  class="form-group" margin-bottom: 20px>
+              <textarea name="salida2"   class="form-control" rows="20" cols="55" wrap="off" id="salida2" placeholder="HTML .."></textarea>
+              <div class="validation"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>JSON PARA ARBOL</p>
+            <div id="Area3" class="form-group" margin-bottom: 20px>
+              <textarea class="form-control"  name="salida1" rows="20" cols="55" wrap="off" id="salida1"
+                placeholder="Arbol JSON .."></textarea>
+              <div class="validation"></div>
+            </div>
+          </td>
+          <td>
+            <div class="card" margin-bottom: 20px>
+              <div class="card-body">
+                <h5 class="card-title m-b-0">VARIABLES</h5>
+              </div>
+              <div id="div1" class="form-control" >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">NOMBRE</th>
+                      <th scope="col">TIPO</th>
+                      <th scope="col">LINEA</th>
+                    </tr>
+                  </thead>
+                  <tbody id="midinamictable" onchange="addTablecurso()" onload="addTablecurso();">
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+  </footer>
+
+
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="lib/toastr/toastr.js"></script>
+  <script src="lib/dist/himalaya.js"></script>
+  <script src="js/loginF/Tabladinamica.js"></script>
+  <script src="js/loginF/constantes.js"></script>
+  <script src="js/loginF/request.js"></script>
+  <script src="js/loginF/generico.js"></script>
+  <script src="js/loginF/controller.js"></script>
+  <script src="js/loginF/tabsdinamicos.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

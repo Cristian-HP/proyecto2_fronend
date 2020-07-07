@@ -1,0 +1,16 @@
+<div id="sendmessage">Your message has been sent. Thank you!</div>
+              <p>ENTRADA C#</p>
+              <div id="Area2" class="form-group" margin-bottom: 20px>
+                <textarea class="form-control" name="entrada" rows="20" cols="45" wrap="off" id="prueba"
+                  data-rule="required" data-msg="Please write something for us" placeholder="Entrada .."></textarea>
+                <div class="validation"></div>
+              </div>
+
+
+
+<section id="contact" class="section-bg wow fadeInUp">
+    <div class="container">
+      
+
+    </div>
+  </section><!-- #contact -->
