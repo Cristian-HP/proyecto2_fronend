@@ -56,22 +56,22 @@
             <li class="active"><a href="#" onclick="nuevaTabs()">Nuevo</a></li>
             <li><a onclick="document.getElementById('archivos').click();"><input id="archivos" type="file" style="display:none;">ABRIR</a></li>
             <li class="dropdown">
-              <a href="https://www.henry-chavez.com" class="dropdown-toggle">down <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle">REPORTES <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="https://www.henry-chavez.com">Action</a></li>
-                <li><a href="https://www.henry-chavez.com">Another action</a></li>
-                <li><a href="https://www.henry-chavez.com">Something else here</a></li>
+                <li><a href="#" id="Reporpy" onclick="archivopy()" >Reporte PY</a></li>
+                <li><a href="#"id="Reporteht" onclick="archivoht()" >REPORTE HTML</a></li>
+                <li><a href="#">Something else here</a></li>
                 <li class="divider"></li>
-                <li><a href="https://www.henry-chavez.com">Separated link</a></li>
+                <li><a href="#">Separated link</a></li>
                 <li class="dropdown">
-                  <a href="https://www.henry-chavez.com" class="dropdown-toggle">Dropdown <b
+                  <a href="#" class="dropdown-toggle">Dropdown <b
                       class="caret right"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="https://www.henry-chavez.com">Action</a></li>
-                    <li><a href="https://www.henry-chavez.com">Another action</a></li>
-                    <li><a href="https://www.henry-chavez.com">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="https://www.henry-chavez.com">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -115,16 +115,17 @@
           <td>
             <p>ENTRADA HTML</p>
             <div id="Area4"  class="form-group" margin-bottom: 20px>
-              <textarea name="salida2"   class="form-control" rows="20" cols="55" wrap="off" id="salida2" placeholder="HTML .."></textarea>
+              <textarea name="salida2"   class="form-control" rows="20" readonly cols="55" wrap="off" id="salida2" placeholder="HTML .."></textarea>
               <div class="validation"></div>
             </div>
           </td>
         </tr>
+        <tr><p style="display:none;">SEPARACION</p></tr>
         <tr>
           <td>
             <p>JSON PARA ARBOL</p>
             <div id="Area3" class="form-group" margin-bottom: 20px>
-              <textarea class="form-control"  name="salida1" rows="20" cols="55" wrap="off" id="salida1"
+              <textarea class="form-control"  name="salida1"  rows="20" cols="55" readonly wrap="off" id="salida1"
                 placeholder="Arbol JSON .."></textarea>
               <div class="validation"></div>
             </div>
@@ -151,6 +152,50 @@
             </div>
           </td>
         </tr>
+        <tr> <p style="display:none;" >SEPARACION</p></tr>
+        <tr>
+          <td>
+            <p>JSON DE HTML</p>
+            <div id="Area6" class="form-group" margin-bottom: 20px>
+              <textarea class="form-control"  name="salida3" rows="20" cols="55" readonly wrap="off" id="salida3"
+                placeholder="JSON DE HTML .."></textarea>
+              <div class="validation"></div>
+            </div>
+          </td>
+          <td>
+            <p>TRADUCCION A PYTHON</p>
+            <div id="Area7" class="form-group" margin-bottom: 20px>
+              <textarea class="form-control"  name="salida4" rows="20" cols="55" readonly wrap="off" id="salida4"
+                placeholder="CODIGO Python .."></textarea>
+              <div class="validation"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="card" margin-bottom: 20px>
+              <div class="card-body">
+                <h5 class="card-title m-b-0">TABLA DE ERRORES</h5>
+              </div>
+              <div id="div1" class="form-control" >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">TIPO</th>
+                      <th scope="col">LINEA</th>
+                      <th scope="col">COLUMNA</th>
+                      <th scope="col">DESCRIPCION</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableError">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+
       </table>
     </div>
   </section>

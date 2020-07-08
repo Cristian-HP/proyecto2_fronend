@@ -22,3 +22,20 @@ function addTablevariable(entrada) {
         }
     }
 }
+
+
+function archivopy(){
+    console.log("pase por la funcion");
+    var contenidoDeArchivo = document.getElementById('salida4').value;
+    var elem = document.getElementById('Reporpy');
+    elem.download = "Reportepy.py";
+    elem.href = "data:application/octet-stream," + encodeURIComponent(contenidoDeArchivo);
+}
+
+function archivoht(){
+    console.log("pase por la funcion ht");
+    var contenidoDeArchivo = document.getElementById('salida2').value;
+    var elem = document.getElementById('Reporteht');
+    elem.download = "ReporteHTML.html";
+    elem.href = "data:application/octet-stream," + encodeURIComponent(contenidoDeArchivo);
+}
